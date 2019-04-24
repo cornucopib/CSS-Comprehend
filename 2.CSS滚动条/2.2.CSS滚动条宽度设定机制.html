@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .outer {
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+        overflow: scroll;
+      }
+      .inner {
+        width: 100%;
+        height: 60px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+
+  <!-- 
+    1. 当父元素设置了scroll
+       IE7 子元素的宽度=400*100%;
+       其他浏览器 子元素的宽度=(父元素-竖直滚动条高度)*100%
+   -->
+
+  <body>
+    <div class="outer">
+      <div class="inner">
+        测试文字
+      </div>
+    </div>
+  </body>
+</html>

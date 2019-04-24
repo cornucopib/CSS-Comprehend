@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .outer {
+        width: 400px;
+        background-color: aqua;
+        overflow: auto;
+      }
+      .inner {
+        width: 410px;
+      }
+
+     
+    </style>
+  </head>
+
+<!-- 
+   滚动条出现的时机
+   1. 当父级元素的overflow的值时auto或scroll,且子元素的宽或者高超出父元素界限的时候,才会出现滚动条。
+      例如:inner设置刀鱼400的宽，outer设置overflow，outer才会出现滚动条。
+      
+ -->
+
+  <body>
+    <div class="outer">
+      <div class="inner">
+        测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+        测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+      </div>
+    </div>
+
+   
+    </div>
+  </body>
+</html>
