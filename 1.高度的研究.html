@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>高度的研究</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .outer {
+        height: 50%;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <!-- 
+      1.父元素设置了高度的情况下，子元素的高度一般按照父元素的高度来定义高度
+      2.父元素没有设置高度的情况下，父元素的高度等于子元素堆叠高度
+
+        如果outer设置了50%的高度，但是html,body没有设置height的情况下，即父元素没有设置高度
+        那么outer的高度等于0*50%.但是如果子元素撑开父元素，则outer等于其子元素堆叠的高度
+
+        也就解释了outer的高度等于两个哈哈的div的高度之和
+      3.height:100%,是相对于离它最近且定义了高度的父元素定义高度的。
+        height:auto,根据块内容自动调节高度
+  -->
+  <body>
+    <div class="outer">
+      <div class="inner">
+        哈哈
+      </div>
+      <div class="inner">
+        哈哈
+      </div>
+    </div>
+  </body>
+</html>
