@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>底部不固定时</title>
+    <style>
+      html,
+      body,
+      .container {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      /* 设置父布局为表格布局 */
+      .container {
+        display: table;
+        width: 100%;
+      }
+
+      /* 将container下的都设置为单元格 */
+      header,
+      footer,
+      main {
+        display: block;
+        display: table-row;
+      }
+
+      header,
+      footer {
+        height: 1px;
+      }
+      header {
+        background-color: aqua;
+      }
+
+      footer {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>我是头部</div>
+      </header>
+
+      <main>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+        <p>我是内容</p>
+      </main>
+
+      <footer>
+        <div>
+          我是底部
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
